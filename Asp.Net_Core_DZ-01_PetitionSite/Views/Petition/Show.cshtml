@@ -1,0 +1,42 @@
+﻿@model Asp.Net_Core_DZ_01_PetitionSite.Models.Petition
+
+@{
+    ViewData["Title"] = "TODO: название петиции";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Petition</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CountOfVotes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CountOfVotes)
+        </dd>
+    </dl>
+</div>
+<div>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>*@
+</div>
